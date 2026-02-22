@@ -6,6 +6,8 @@ categories:
   - "[tools]"
 redirecto_to: ./index.html
 ---
-<script>  
-window.location.href = "./index.html";  
-</script>
+<iframe  
+src="{{ './index.html' | relative_url }}"  
+style="width: 100%; height: 90vh; border: 0;"  
+loading="lazy"  
+></iframe>
