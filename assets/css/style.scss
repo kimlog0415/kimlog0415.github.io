@@ -1,0 +1,62 @@
+---
+---
+
+@import "minima";
+
+/* Landing */
+.hero {
+  padding: 2rem 0 1.5rem;
+}
+.subtitle {
+  margin-top: .5rem;
+  opacity: .8;
+}
+.hero-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: .55rem .9rem;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .6rem;
+  text-decoration: none;
+}
+.btn.primary {
+  font-weight: 600;
+}
+
+.cards {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: block;
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: .9rem;
+  text-decoration: none;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.card-desc {
+  margin-top: .35rem;
+  opacity: .85;
+  line-height: 1.35;
+}
+
+.card-meta {
+  margin-top: .8rem;
+  font-size: .92rem;
+  opacity: .75;
+}
