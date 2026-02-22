@@ -3,7 +3,6 @@ layout: default
 title: Home
 permalink: /
 ---
-
 <div class="hero">
   <h1>Kim Log</h1>
   <p class="subtitle">Project-based builder · Unreal Engine · Web Tools </p>
