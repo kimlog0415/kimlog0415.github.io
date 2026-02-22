@@ -9,7 +9,7 @@ collections:
     permalink: /devlog/:name/
   tools:
     output: true
-    permalink: /tools/:name/
+    permalink: /tool/:name/
   ue5:
     output: true
     permalink: /ue5/:name/
