@@ -22,7 +22,10 @@ permalink: /tools/
 | where_exp: "p", "p.categories contains 'tools'"  
 | where_exp: "p", "p.categories contains 'devlog'"  
 | sort: "date" | reverse %}  
-  
-{% for post in posts %}  
-- {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
-{% endfor %}
+{% if ue5_devlog.size > 0 %}
+  {% for post in posts %}
+  - {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})
+  {% endfor %}
+{% else %}
+  아직 글이 없습니다.
+{% endif %}
