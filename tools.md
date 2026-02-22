@@ -6,7 +6,7 @@ permalink: /tool/
 
 [PDF Editor](./_tools/pdf-editor/index.html)
 
-{% assign posts = site.tool | sort: "date" | reverse %}
+{% assign posts = site.tools | sort: "date" | reverse %}
 {% if posts.size == 0 %}
 아직 글이 없습니다.
 {% else %}
