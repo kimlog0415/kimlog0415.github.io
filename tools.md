@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tools
-permalink: /tool/
+permalink: /tools/
 ---
 
 [PDF Editor](./_tools/pdf-editor/index.html)
