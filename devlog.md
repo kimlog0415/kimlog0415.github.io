@@ -5,8 +5,8 @@ permalink: /devlog/
 ---
 ### Today I Learn
 {% assign ue5_devlog = site.devlog  
-| where_exp: "p", "p.categories contains '[ue5]'"  
-| where_exp: "p", "p.project contains '[today-i-learn]'"  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project contains 'today-i-learn'"  
 | sort: "date" | reverse %}
 
 {% for post in posts %}  
@@ -16,8 +16,8 @@ permalink: /devlog/
 ### Dev Log ― Unreal Engine 5
 
 {% assign ue5_devlog = site.devlog  
-| where_exp: "p", "p.categories contains '[ue5]'"  
-| where_exp: "p", "p.categories contains '[devlog]'"  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.categories contains 'devlog'"  
 | sort: "date" | reverse %}
 
 {% for post in posts %}  
