@@ -3,6 +3,9 @@ layout: page
 title: Dev Log
 permalink: /devlog/
 ---
+site.devlog size = {{ site.devlog | size }}
+첫 글 categories = {{ site.devlog[0].categories }}
+
 ### Today I Learn
 {% assign ue5_devlog = site.devlog  
 | where_exp: "p", "p.categories contains 'ue5'"  
