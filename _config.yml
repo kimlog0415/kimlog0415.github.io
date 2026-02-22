@@ -6,3 +6,4 @@ plugins:
 header_pages:
   - devlog.md
   - ud5.md
+  - about.md
