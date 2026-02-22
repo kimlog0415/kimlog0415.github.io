@@ -3,8 +3,6 @@ layout: page
 title: Unreal Engine 5
 permalink: /ue5/
 ---
-총 posts: {{ site.ue5 | size }}
-
 ### Projects
 
 

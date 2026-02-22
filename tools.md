@@ -3,8 +3,6 @@ layout: page
 title: Tools
 permalink: /tools/
 ---
-총 posts: {{ site.tools | size }}
-
 ### Projects
 
 
