@@ -3,6 +3,7 @@ layout: page
 title: Dev Log
 permalink: /devlog/
 ---
+총 posts: {{ site.posts | size }}
 
 ### Dev Log ― Unreal Engine 5
 
