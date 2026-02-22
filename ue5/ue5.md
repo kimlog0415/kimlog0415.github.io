@@ -4,13 +4,8 @@ title: Unreal Engine 5
 permalink: /ue5/
 ---
 
-{% assign posts = site.categories.ue5 %}
+{% assign posts = site.ue5 | sort: "date" | reverse %}
 
-{% if posts %}
-  {% assign posts = posts | sort: "date" | reverse %}
-{% else %}
-  {% assign posts = "" | split: "" %}
-{% endif %}
 {% if posts.size == 0 %}
 아직 글이 없습니다.
 {% else %}
