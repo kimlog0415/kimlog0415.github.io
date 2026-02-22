@@ -8,7 +8,7 @@ permalink: /ue5/
   | where_exp: "p", "p.categories contains 'ue5'"
   | sort: "date" | reverse %}
 
-{% assign projects = posts | map: "project" | uniq | sort %}
+{% assign projects = posts | map: "project" | compact | uniq | sort %}
 
 {% for proj in projects %}
 
