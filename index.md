@@ -6,11 +6,10 @@ permalink: /
 
 <div class="hero">
   <h1>Kim Log</h1>
-  <p class="subtitle">Project-based builder · Unreal Engine · Web Tools · Backend</p>
+  <p class="subtitle">Project-based builder · Unreal Engine · Web Tools </p>
   <div class="hero-actions">
     <a class="btn primary" href="/UE5/">Unreal</a>
     <a class="btn" href="/webtools/">Web Tools</a>
-    <a class="btn" href="/backend/">Backend</a>
   </div>
 </div>
 
