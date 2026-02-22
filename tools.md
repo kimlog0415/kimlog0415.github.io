@@ -3,7 +3,7 @@ layout: page
 title: Tools
 permalink: /tools/
 ---
-### Projects
+## Projects
 {% assign posts = site.devlog
   | where_exp: "p", "p.categories contains 'tools'"
   | sort: "date" | reverse %}
@@ -12,7 +12,7 @@ permalink: /tools/
 
 {% for proj in projects %}
 
-## {{ proj }}
+### {{ proj }}
 
 {% assign group = posts | where: "project", proj %}
 
@@ -22,7 +22,7 @@ permalink: /tools/
 
 {% endfor %}
 
-### Dev Log ― Tools  
+## Dev Log ― Tools  
   
 {% assign items = site.devlog | sort: "date" | reverse %}  
 {% assign count = 0 %}  

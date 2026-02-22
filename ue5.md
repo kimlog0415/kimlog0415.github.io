@@ -3,7 +3,7 @@ layout: page
 title: Unreal Engine 5
 permalink: /ue5/
 ---
-### Projects
+## Projects
 {% assign posts = site.devlog
   | where_exp: "p", "p.categories contains 'ue5'"
   | sort: "date" | reverse %}
@@ -12,7 +12,7 @@ permalink: /ue5/
 
 {% for proj in projects %}
 
-## {{ proj }}
+### {{ proj }}
 
 {% assign group = posts | where: "project", proj %}
 
@@ -22,7 +22,7 @@ permalink: /ue5/
 
 {% endfor %}
 
-### Dev Log
+## Dev Log
 
 {% assign items = site.devlog | sort: "date" | reverse %}  
 {% assign count = 0 %}  
