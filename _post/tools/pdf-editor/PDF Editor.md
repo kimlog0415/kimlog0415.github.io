@@ -4,7 +4,11 @@ title: PDF Editor
 date: 2026-02-17
 categories:
   - "[tools]"
+  - "[devlog]"
+  - "[ue5]"
 redirecto_to: ./index.html
+project:
+  - "[pdf-editor]"
 ---
 <iframe  
 src="{{ './index.html' | relative_url }}"  

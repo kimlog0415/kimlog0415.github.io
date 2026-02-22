@@ -5,6 +5,9 @@ date: 2025-12-28
 categories:
   - "[devlog]"
   - "[ue5]"
+  - "[tools]"
+project:
+  - "[gacha-machine]"
 ---
 ## 오늘 한 일
 

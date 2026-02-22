@@ -5,6 +5,9 @@ date: 2026-02-22
 categories:
   - "[devlog]"
   - "[ue5]"
+  - "[tools]"
+project:
+  - "[number-run]"
 ---
 ## 오늘 한 일
 

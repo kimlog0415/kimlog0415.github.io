@@ -5,6 +5,9 @@ date: 2025-12-14
 categories:
   - "[devlog]"
   - "[ue5]"
+  - "[tools]"
+project:
+  - "[gacha-machine]"
 ---
 ## 요약
 

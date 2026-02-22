@@ -6,6 +6,8 @@ categories:
   - "[devlog]"
   - "[ue5]"
   - "[tools]"
+project:
+  - "[rock-paper-scissors]"
 ---
 ## 오늘 한 일
 

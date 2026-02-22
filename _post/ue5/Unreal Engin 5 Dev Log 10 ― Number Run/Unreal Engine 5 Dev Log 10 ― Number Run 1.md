@@ -5,6 +5,8 @@ date: 2026-02-06
 categories:
   - "[devlog]"
   - "[ue5]"
+project:
+  - "[number-run]"
 ---
 ## 오늘의 목표
 
