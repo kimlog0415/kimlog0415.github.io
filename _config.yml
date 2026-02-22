@@ -4,15 +4,15 @@ theme: minima
 plugins:
   - jekyll-feed
 collections:
-  devlog:
-    output: true
-    permalink: /devlog/:name/
-  tools:
-    output: true
-    permalink: /tool/:name/
   ue5:
     output: true
-    permalink: /ue5/:name/
+    permalink: /ue5/:path/
+  tools:
+    output: true
+    permalink: /tools/:path/
+  devlog:
+    output: true
+    permalink: /devlog/:path/
 header_pages:
   - devlog.md
   - ue5.md
