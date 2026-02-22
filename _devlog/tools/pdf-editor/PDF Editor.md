@@ -2,8 +2,7 @@
 layout: post
 title: PDF Editor
 date: 2026-02-17
-categories:
-  - tools
+categories: tools
 redirecto_to: ./index.html
 project: web-tools
 ---
