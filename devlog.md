@@ -7,8 +7,8 @@ permalink: /devlog/
 ### Dev Log ― Unreal Engine 5
 
 {% assign ue5_devlog = site.posts
-  | where_exp: "p", "p.tags contains 'ue5'"
-  | where_exp: "p", "p.tags contains 'devlog'"
+  | where_exp: "p", "p.categories contains 'ue5'"
+  | where_exp: "p", "p.categories contains 'devlog'"
   | sort: "date" | reverse %}
 
 {% if ue5_devlog.size > 0 %}
@@ -23,8 +23,8 @@ permalink: /devlog/
 ### Dev Log ― Tools
 
 {% assign tools_devlog = site.posts
-  | where_exp: "p", "p.tags contains 'tools'"
-  | where_exp: "p", "p.tags contains 'devlog'"
+  | where_exp: "p", "p.categories contains 'tools'"
+  | where_exp: "p", "p.categories contains 'devlog'"
   | sort: "date" | reverse %}
 
 {% if tools_devlog.size > 0 %}
