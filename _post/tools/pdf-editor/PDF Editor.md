@@ -8,7 +8,7 @@ categories:
   - "[ue5]"
 redirecto_to: ./index.html
 project:
-  - "[pdf-editor]"
+  - "[web-tools]"
 ---
 <iframe  
 src="{{ './index.html' | relative_url }}"  

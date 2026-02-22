@@ -5,8 +5,7 @@ permalink: /ue5/
 ---
 
 ### Projects
-{% assign posts = site.posts | | where_exp: "p", "p.tags contains 'ue5'"  
-| where_exp: "p", "p.tags contains 'devlog'"  | sort: "date" | reverse %}  
+{% assign posts = site.posts | where_exp: "p", "p.tags contains 'ue5'" | sort: "date" | reverse %}  
 {% assign projects = posts | map: "project" | uniq | sort %}  
   
 {% for proj in projects %}  
