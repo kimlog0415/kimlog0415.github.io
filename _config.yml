@@ -5,4 +5,4 @@ plugins:
   - jekyll-feed
 header_pages:
   - index.md
-  - [DevLog](/DevLog/)
+  - devlog.md
