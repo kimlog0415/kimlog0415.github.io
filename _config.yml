@@ -5,6 +5,6 @@ plugins:
   - jekyll-feed
 header_pages:
   - devlog.md
-  - ue5.md
-  - webtools.md
+  - ue5/ue5.md
+  - tools/tools.md
   - about.md
