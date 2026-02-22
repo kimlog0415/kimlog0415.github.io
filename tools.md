@@ -8,10 +8,10 @@ permalink: /tools/
 
 ### Dev Log
 
-{% assign posts = site.devlog  
-| where_exp: "p", "(p.categories | join: ',' | downcase) contains 'tools'"  
-| where_exp: "p", "(p.categories | join: ',' | downcase) contains 'devlog'"  
-| sort: "date" | reverse %}  
+{% assign ue5_devlog = site.devlog  
+| where_exp: "p", "p.categories contains 'tools'"  
+| where_exp: "p", "p.categories contains 'devlog'"  
+| sort: "date" | reverse %}
 {% if posts.size == 0 %}  
 아직 글이 없습니다.  
 {% else %}
