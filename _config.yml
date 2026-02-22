@@ -1,0 +1,7 @@
+title: "KimLog"
+description: "Unreal Engine / Web Tools "
+theme: minima
+plugins:
+  - jekyll-feed
+header_pages:
+  - index.md
