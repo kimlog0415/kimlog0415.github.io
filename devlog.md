@@ -4,13 +4,8 @@ title: Dev Log
 permalink: /devlog/
 ---
 
-{% assign posts = site.categories.devlog %}
+{% assign posts = site.devlog | sort: "date" | reverse %}
 
-{% if posts %}
-  {% assign posts = posts | sort: "date" | reverse %}
-{% else %}
-  {% assign posts = "" | split: "" %}
-{% endif %}
 {% if posts.size == 0 %}
 아직 글이 없습니다.
 {% else %}
