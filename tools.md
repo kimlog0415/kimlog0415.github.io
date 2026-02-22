@@ -5,7 +5,8 @@ permalink: /tools/
 ---
 ## Projects
 {% assign posts = site.devlog
-  | where_exp: "p", "p.categories contains 'tools'"
+{% assign cats = post.categories | join: "," | downcase %}  
+{% if cats contains "summary" and cats contains "tools" %}  
   | sort: "date" | reverse %}
 
 {% assign projects = posts | map: "project" | compact | uniq | sort %}

@@ -5,6 +5,7 @@ date: 2025-10-04
 categories:
   - devlog
   - ue5
+  - summary
 ---
 ## 요약
 

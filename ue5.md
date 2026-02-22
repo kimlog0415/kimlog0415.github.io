@@ -5,7 +5,8 @@ permalink: /ue5/
 ---
 ## Projects
 {% assign posts = site.devlog
-  | where_exp: "p", "p.categories contains 'ue5'"
+{% assign cats = post.categories | join: "," | downcase %}  
+{% if cats contains "summary" and cats contains "ue5" %}  
   | sort: "date" | reverse %}
 
 {% assign projects = posts | map: "project" | compact | uniq | sort %}

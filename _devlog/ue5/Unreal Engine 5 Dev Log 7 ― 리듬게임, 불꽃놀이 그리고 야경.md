@@ -5,6 +5,7 @@ date: 2025-11-30
 categories:
   - devlog
   - ue5
+  - summary
 ---
 ## 요약
 - UE5로 리듬게임 + 불꽃놀이 + 야경 씬을 통합한 개인 프로젝트.
