@@ -5,3 +5,4 @@ plugins:
   - jekyll-feed
 header_pages:
   - index.md
+  - [DevLog](https://kimlog0415.github.io/DevLog/)
