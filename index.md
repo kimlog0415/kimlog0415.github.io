@@ -22,7 +22,7 @@ permalink: /
     <div class="card-meta">View posts →</div>
   </a>
 
-  <a class="card" href="/webtools/">
+  <a class="card" href="/tools/">
     <div class="card-title">Web Tools</div>
     <div class="card-desc">PDF tools · Image converter · Browser utilities</div>
     <div class="card-meta">View tools →</div>
