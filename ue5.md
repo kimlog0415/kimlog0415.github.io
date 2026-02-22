@@ -3,6 +3,7 @@ layout: page
 title: Unreal Engine 5
 permalink: /ue5/
 ---
+총 posts: {{ site.ue5 | size }}
 
 ### Projects
 {% assign posts = site.ue5 | where_exp: "p", "p.categories contains 'ue5'" | sort: "date" | reverse %}  

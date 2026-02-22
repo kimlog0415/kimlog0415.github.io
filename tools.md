@@ -3,6 +3,8 @@ layout: page
 title: Tools
 permalink: /tools/
 ---
+총 posts: {{ site.tools | size }}
+
 ### Tools
 {% assign posts = site.tools | where_exp: "p", "p.categories contains 'ue5'" | sort: "date" | reverse %}  
 {% assign projects = tools | map: "project" | uniq | sort %}  
