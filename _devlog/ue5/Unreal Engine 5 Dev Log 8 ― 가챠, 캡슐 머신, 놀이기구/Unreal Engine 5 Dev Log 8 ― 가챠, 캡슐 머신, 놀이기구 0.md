@@ -3,11 +3,9 @@ layout: post
 title: Unreal Engine 5 Dev Log 8 ― 가챠, 캡슐 머신, 놀이기구
 date: 2025-12-14
 categories:
-  - "[devlog]"
-  - "[ue5]"
-  - "[tools]"
-project:
-  - "[gacha-machine]"
+  - devlog
+  - ue5
+project: gacha-machine
 ---
 ## 요약
 

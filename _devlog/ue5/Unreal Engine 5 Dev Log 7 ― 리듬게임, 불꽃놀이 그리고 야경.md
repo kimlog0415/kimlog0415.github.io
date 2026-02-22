@@ -3,8 +3,8 @@ layout: post
 title: Unreal Engine 5 Dev Log 7 ― 리듬게임, 불꽃놀이 그리고 야경
 date: 2025-11-30
 categories:
-  - "[devlog]"
-  - "[ue5]"
+  - devlog
+  - ue5
 ---
 ## 요약
 - UE5로 리듬게임 + 불꽃놀이 + 야경 씬을 통합한 개인 프로젝트.

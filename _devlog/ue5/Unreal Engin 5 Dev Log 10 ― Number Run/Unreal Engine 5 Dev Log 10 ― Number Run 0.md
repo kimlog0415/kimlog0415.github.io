@@ -3,11 +3,9 @@ layout: post
 title: Unreal Engine 5 Dev Log 10 ― Number Run
 date: 2026-02-06
 categories:
-  - "[devlog]"
-  - "[ue5]"
-  - "[tools]"
-project:
-  - "[number-run]"
+  - devlog
+  - ue5
+project: number-run
 ---
 ## 요약
 

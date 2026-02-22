@@ -3,12 +3,9 @@ layout: post
 title: PDF Editor
 date: 2026-02-17
 categories:
-  - "[tools]"
-  - "[devlog]"
-  - "[ue5]"
+  - tools
 redirecto_to: ./index.html
-project:
-  - "[web-tools]"
+project: web-tools
 ---
 <iframe  
 src="{{ './index.html' | relative_url }}"  
