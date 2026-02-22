@@ -6,7 +6,7 @@ categories:
   - "[devlog]"
   - "[ue5]"
 ---
-# 오늘 한 일
+## 오늘 한 일
 
 1. Insert Coin 존
 	1. InsertZone에 가까이 다가가면 INSERT COIN HERE 띄우기
@@ -23,12 +23,12 @@ categories:
 
 ---
 
-# 막힌 부분
+## 막힌 부분
 
 1. -
 
 ---
 
-# 다음에 할 일
+## 다음에 할 일
 
 1. Pull Btn 위에서 특정 버튼(Spacebar 등)을 누르면 가챠 이벤트(시네마틱) 실행.

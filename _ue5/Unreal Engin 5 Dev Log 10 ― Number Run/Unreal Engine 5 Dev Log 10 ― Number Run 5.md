@@ -6,7 +6,7 @@ categories:
   - "[devlog]"
   - "[ue5]"
 ---
-# 오늘 한 일
+## 오늘 한 일
 
 1. Finish 될 때 연출
 	1. Set Global Time Dilation을 이용한 Slow motion 연출
@@ -15,13 +15,13 @@ categories:
 
 ---
 
-# 막힌 부분
+## 막힌 부분
 
 1. 
 
 ---
 
-# 다음에 할 일
+## 다음에 할 일
 
 1. 
 

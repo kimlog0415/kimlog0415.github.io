@@ -6,7 +6,7 @@ categories:
   - "[devlog]"
   - "[ue5]"
 ---
-# 오늘 한 일
+## 오늘 한 일
 
 1. WBP_Result, WBP_RankingRow, BP_RankingItem
     1. 표처럼 순위, 숫자, 소요시간 표시하기
@@ -21,14 +21,14 @@ categories:
 
 ---
 
-# 막힌 부분
+## 막힌 부분
 
 1. 각 숫자가 Trigger를 지나는 순간을 체크할 때 숫자가 정확하게 들어가지 않는 오류 발생  
     > 구조체 핀 분할이 아닌 Break를 사용하고, Set members in ST Numbers를 이용해 업데이트 된 것만 변경하도록 수정
 
 ---
 
-# 다음에 할 일
+## 다음에 할 일
 
 1. 
 

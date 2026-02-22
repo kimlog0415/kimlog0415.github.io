@@ -6,7 +6,7 @@ categories:
   - "[devlog]"
   - "[ue5]"
 ---
-# 오늘 한 일
+## 오늘 한 일
 
 1. LevelBP
 	1. CE_SetDistance 오류 개선
@@ -34,14 +34,14 @@ categories:
 
 ---
 
-# 막힌 부분
+## 막힌 부분
 
 1. 각 Number가 Trigger를 지나간 타이밍을 Array에 넣을 때, Find(Arr)가 요소 중 일부라도 일치하면 찾아주는줄 알았는데 아니었다.
    > for each loop를 이용하는것으로 변경하여 해결했다.
 
 ---
 
-# 다음에 할 일
+## 다음에 할 일
 
 1. GameSystem
 	1. WBP_Result 만들어서 표처럼 순위, 숫자, 몇 초인지 표시하기

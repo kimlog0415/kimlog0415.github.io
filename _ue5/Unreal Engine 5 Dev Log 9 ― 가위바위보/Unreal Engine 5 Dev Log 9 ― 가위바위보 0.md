@@ -8,20 +8,20 @@ categories:
 ---
 ![](https://blog.kakaocdn.net/dna/cxQ2l1/dJMcab38FX9/AAAAAAAAAAAAAAAAAAAAAHcx9VfxOrmF_oB6XugLryRKwnwjgSciX23nVUVzNmmZ/img.webp?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=j4CtdzHWP0YQ1NGOgvO5Fc89bv4%3D)
 
-# 요약
+## 요약
 
 - Unreal Engine 5의 UMG를 활용해 버튼 입력, 판정 로직, 애니메이션을 포함한 가위바위보 게임 머신 형태의 2D 미니게임을 구현했다.
 
 ---
 
-# 제작 동기
+## 제작 동기
 
 - UMG 수업 내용을 단순 실습에서 끝내지 않고, 실제로 완결된 미니게임 형태로 구현해보고 싶었다.
 - 버튼 입력 → 판정 → 결과 출력 → 애니메이션까지 UI 중심 게임 흐름을 직접 설계하는 것이 목표였다.
 
 ---
 
-# 목표 설정
+## 목표 설정
 
 - 작업 기간: 2026.01.25 ~ 2026.01.30.
 - 목표
@@ -32,7 +32,7 @@ categories:
 
 ---
 
-# 주요 작업
+## 주요 작업
 
 1. UMG(Unreal Motion Graphics) 구현 ☑️
     1. 버튼 터치 기반 가위/바위/보 선택 UI 구성 ☑️
@@ -44,7 +44,7 @@ categories:
 
 ---
 
-# 결과
+## 결과
 
 1. UMG 기반 가위바위보 게임머신을 구현했다.
 2. 버튼 클릭, 판정 로직, 점수 계산, 애니메이션 연출이 하나의 게임 루프로 동작한다.
@@ -56,7 +56,7 @@ categories:
 
 ---
 
-# Dev Log
+## Dev Log
 
 1. [Unreal Engine 5 Dev Log 9 ― 가위바위보 1](https://kimlog1203.tistory.com/23)
 2. [Unreal Engine 5 Dev Log 9 ― 가위바위보 2](https://kimlog1203.tistory.com/24)
