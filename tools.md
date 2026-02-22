@@ -18,12 +18,14 @@ permalink: /tools/
 {% endfor %}
 
 ### Dev Log
-{% assign posts = site.posts  
-| where_exp: "p", "p.categories contains 'tools'"  
-| where_exp: "p", "p.categories contains 'devlog'"  
-| sort: "date" | reverse %}  
-{% if ue5_devlog.size > 0 %}
-  {% for post in posts %}
+
+{% assign tools_devlog = site.posts
+  | where_exp: "p", "p.categories contains 'tools'"
+  | where_exp: "p", "p.categories contains 'devlog'"
+  | sort: "date" | reverse %}
+
+{% if tools_devlog.size > 0 %}
+  {% for post in tools_devlog %}
   - {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})
   {% endfor %}
 {% else %}
