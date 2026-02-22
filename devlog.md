@@ -3,8 +3,6 @@ layout: page
 title: Dev Log
 permalink: /devlog/
 ---
-총 posts: {{ site.devlog | size }}
-
 ### Dev Log ― Unreal Engine 5
 
 {% assign posts = site.devlog  
