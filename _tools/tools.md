@@ -4,7 +4,7 @@ title: Tools
 permalink: /tool/
 ---
 
-[PDF Editor](./pdf-editor/index.html)
+[PDF Editor](index.html)
 
 {% assign posts = site.tool | sort: "date" | reverse %}
 
