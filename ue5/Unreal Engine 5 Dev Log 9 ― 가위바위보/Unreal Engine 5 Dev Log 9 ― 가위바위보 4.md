@@ -1,3 +1,12 @@
+---
+layout: post
+title: Unreal Engine 5 Dev Log 9 ― 가위바위보 4
+date: 2026-01-29
+categories:
+  - "[devlog]"
+  - "[ue5]"
+  - "[tools]"
+---
 # 오늘 한 일
 
 1. WBP 애니메이션 및 시각적인 부분 개선하기

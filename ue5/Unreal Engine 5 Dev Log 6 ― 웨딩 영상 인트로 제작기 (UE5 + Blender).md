@@ -1,3 +1,11 @@
+---
+layout: post
+title: Unreal Engine 5 Dev Log 6 ― 웨딩 영상 인트로 제작기 (UE5 + Blender)
+date: 2025-10-04
+categories:
+  - "[devlog]"
+  - "[ue5]"
+---
 # 요약
 
 - Blender에서 피드 카드 + 풍선 글씨 제작

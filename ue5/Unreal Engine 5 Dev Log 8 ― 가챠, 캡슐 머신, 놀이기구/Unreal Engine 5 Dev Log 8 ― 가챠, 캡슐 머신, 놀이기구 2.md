@@ -1,3 +1,11 @@
+---
+layout: post
+title: Unreal Engine 5 Dev Log 8 ― 가챠, 캡슐 머신, 놀이기구 2
+date: 2025-12-15
+categories:
+  - "[devlog]"
+  - "[ue5]"
+---
 # 오늘 한 일
 
 1. 블렌더로 만든 가챠 머신 및 관련 object 불러와서 맵에 설치함.

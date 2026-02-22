@@ -1,3 +1,12 @@
+---
+layout: post
+title: Unreal Engine 5 Dev Log 9 ― 가위바위보 3
+date: 2026-01-27
+categories:
+  - "[devlog]"
+  - "[ue5]"
+  - "[tools]"
+---
 # 오늘 한 일
 
 1. 최종 GetPoint 부분 오류 수정. 게임 시작 시 Set SelectedPoint를 미리 해두기

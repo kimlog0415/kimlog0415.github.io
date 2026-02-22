@@ -1,3 +1,11 @@
+---
+layout: post
+title: Unreal Engine 5 Dev Log 3 ― 전자 피아노 + MIDI = 소리와 빛으로 반응하는 UE5 피아노
+date: 2025-09-09
+categories:
+  - "[devlog]"
+  - "[ue5]"
+---
 ![](https://blog.kakaocdn.net/dna/bxT1FU/dJMcahbJHX2/AAAAAAAAAAAAAAAAAAAAAFcAuw3rCjyLCdzKhs6gNpmKx_27B2oKQTdGh2-0zHwm/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1764514799&allow_ip=&allow_referer=&signature=OYNQ%2FqBdN%2B05jqOjTbXZM2dElRM%3D)
 
 

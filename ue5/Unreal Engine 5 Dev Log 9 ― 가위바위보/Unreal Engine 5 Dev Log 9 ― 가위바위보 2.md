@@ -1,3 +1,12 @@
+---
+layout: post
+title: Unreal Engine 5 Dev Log 9 ― 가위바위보 2
+date: 2026-01-25
+categories:
+  - "[devlog]"
+  - "[ue5]"
+  - "[tools]"
+---
 # 오늘 한 일
 
 1. 가위바위보 WBP 및 로직 구현

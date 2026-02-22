@@ -1,3 +1,11 @@
+---
+layout: post
+title: Unreal Engine 5 Dev Log 2 ― 시네마틱(Portal Exit)
+date: 2025-08-30
+categories:
+  - "[devlog]"
+  - "[ue5]"
+---
 ![](https://blog.kakaocdn.net/dna/btyLwe/dJMcaiWrN28/AAAAAAAAAAAAAAAAAAAAADFZKT6OmBGU4-RflvRbHa1Wmms-cHIxFCJWH3vOZ-w5/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=uLV0ErYiioGs%2B9L%2B34iXzY4NNVg%3D)
 
 # 도입

@@ -1,3 +1,11 @@
+---
+layout: post
+title: Unreal Engine 5 Dev Log 8 ― 가챠, 캡슐 머신, 놀이기구 3
+date: 2025-12-16
+categories:
+  - "[devlog]"
+  - "[ue5]"
+---
 # 오늘 한 일
 
 1. Insert Coin 존

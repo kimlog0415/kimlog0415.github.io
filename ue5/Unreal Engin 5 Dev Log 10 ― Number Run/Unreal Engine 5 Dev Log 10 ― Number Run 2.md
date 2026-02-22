@@ -1,3 +1,11 @@
+---
+layout: post
+title: Unreal Engine 5 Dev Log 10 ― Number Run 2
+date: 2026-02-17
+categories:
+  - "[devlog]"
+  - "[ue5]"
+---
 # 오늘의 목표
 
 1. 그동안 만들어둔 만큼 다시 만들기

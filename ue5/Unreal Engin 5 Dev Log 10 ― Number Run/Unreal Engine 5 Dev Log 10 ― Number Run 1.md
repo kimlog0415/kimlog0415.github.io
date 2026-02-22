@@ -1,3 +1,11 @@
+---
+layout: post
+title: Unreal Engine 5 Dev Log 10 ― Number Run 1
+date: 2026-02-06
+categories:
+  - "[devlog]"
+  - "[ue5]"
+---
 # 오늘의 목표
 
 1. Number Run 프로젝트 초기 세팅
