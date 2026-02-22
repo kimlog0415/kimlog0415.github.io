@@ -7,6 +7,12 @@ collections:
   devlog:
     output: true
     permalink: /devlog/:name/
+  tools:
+    output: true
+    permalink: /tools/:name/
+  ue5:
+    output: true
+    permalink: /ue5/:name/
 header_pages:
   - devlog.md
   - ue5.md
