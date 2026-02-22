@@ -4,5 +4,5 @@ theme: minima
 plugins:
   - jekyll-feed
 header_pages:
-  - index.md
   - devlog.md
+    - ud5.md
