@@ -3,6 +3,10 @@ description: "Unreal Engine / Web Tools "
 theme: minima
 plugins:
   - jekyll-feed
+collections:
+  devlog:
+    output: true
+    permalink: /devlog/:name/
 header_pages:
   - devlog.md
   - ue5/ue5.md
