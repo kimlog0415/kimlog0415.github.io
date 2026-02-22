@@ -5,13 +5,13 @@ permalink: /ue5/
 ---
 
 ### Projects
-{% assign posts = site.posts | where_exp: "p", "p.categories contains 'ue5'" | sort: "date" | reverse %}  
+{% assign posts = site.ue5 | where_exp: "p", "p.categories contains 'ue5'" | sort: "date" | reverse %}  
 {% assign projects = posts | map: "project" | uniq | sort %}  
   
 {% for proj in projects %}  
 #### {{ proj }}  
   
-{% assign group = posts | where: "project", proj %}  
+{% assign group = ue5 | where: "project", proj %}  
 {% for post in group %}  
 - {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
 {% endfor %}  
@@ -20,7 +20,7 @@ permalink: /ue5/
 
 ### Dev Log
 
-{% assign ue5_devlog = site.posts
+{% assign ue5_devlog = site.ue5
   | where_exp: "p", "p.categories contains 'ue5'"
   | where_exp: "p", "p.categories contains 'devlog'"
   | sort: "date" | reverse %}

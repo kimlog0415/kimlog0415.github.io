@@ -4,8 +4,8 @@ title: Tools
 permalink: /tools/
 ---
 ### Tools
-{% assign posts = site.posts | where_exp: "p", "p.categories contains 'ue5'" | sort: "date" | reverse %}  
-{% assign projects = posts | map: "project" | uniq | sort %}  
+{% assign posts = site.tools | where_exp: "p", "p.categories contains 'ue5'" | sort: "date" | reverse %}  
+{% assign projects = tools | map: "project" | uniq | sort %}  
   
 {% for proj in projects %}  
 #### {{ proj }}  
@@ -19,7 +19,7 @@ permalink: /tools/
 
 ### Dev Log
 
-{% assign tools_devlog = site.posts
+{% assign tools_devlog = site.tools
   | where_exp: "p", "p.categories contains 'tools'"
   | where_exp: "p", "p.categories contains 'devlog'"
   | sort: "date" | reverse %}
