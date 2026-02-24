@@ -16,7 +16,7 @@ permalink: /ue5/
 | uniq  
 | sort %}
   
-{% for proj in projects %}  
+{% for post in posts %}  
   
 ### {{ proj }}  
   
