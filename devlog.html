@@ -1,0 +1,114 @@
+---
+layout: page
+title: Dev Log
+permalink: /devlog/
+---
+
+{% assign base = site.devlog
+  | where_exp: "p", "p.categories contains 'devlog'"
+  | sort: "date"
+  | reverse
+%}
+
+{% for sec in site.data.sections %}
+  {% assign sec_key = sec[0] %}
+  {% assign sec_data = sec[1] %}
+
+  {% assign sec_posts = base %}
+  {% for inc in sec_data.include %}
+    {% assign sec_posts = sec_posts | where_exp: "p", "p.categories contains inc" %}
+  {% endfor %}
+
+  <h3>Dev Log ― {{ sec_data.title }}</h3>
+
+  {% if sec_posts.size == 0 %}
+    <p>아직 글이 없습니다.</p>
+  {% else %}
+    {% assign groups = sec_posts | group_by: "project" %}
+
+    {% for group in groups %}
+      {% assign first = group.items | first %}
+      {% assign project_title = first.projectName | default: group.name %}
+      {% assign gid = sec_key | append: "-" | append: group.name | replace: " ", "-" | downcase %}
+
+      <details open class="devlog-group">
+        <summary class="devlog-summary">
+          <span class="devlog-title">{{ project_title }}</span>
+          <span class="devlog-meta">({{ group.items.size }} posts)</span>
+        </summary>
+
+        <ul class="devlog-list">
+          {% for post in group.items limit: 3 %}
+            <li>{{ post.date | date: "%Y-%m-%d" }} · <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+
+        {% if group.items.size > 3 %}
+          <ul class="devlog-list devlog-extra" id="extra-{{ gid }}" hidden>
+            {% for post in group.items offset: 3 %}
+              <li>{{ post.date | date: "%Y-%m-%d" }} · <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+
+          <button type="button" class="devlog-toggle" data-target="extra-{{ gid }}" aria-expanded="false">
+            더보기 ({{ group.items.size | minus: 3 }}개)
+          </button>
+        {% endif %}
+      </details>
+    {% endfor %}
+  {% endif %}
+
+  <hr />
+{% endfor %}
+
+<style>
+  .devlog-toggle{
+    margin: 6px 0 14px;
+    padding: 6px 10px;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    background: #f6f8fa;
+    font-size: 13px;
+    line-height: 1.2;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .devlog-toggle:hover{ background:#eef2f6; }
+  .devlog-toggle:active{ transform: translateY(1px); }
+  .devlog-toggle[aria-expanded="true"]{
+    background:#fff;
+    border-color:#b6c2cf;
+  }
+  .devlog-summary{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+  }
+  .devlog-title{ font-weight: 700; }
+  .devlog-meta{ color:#6b7280; font-size:12px; }
+  .devlog-list{ margin: 8px 0 0 18px; }
+</style>
+
+<script>
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".devlog-toggle");
+  if (!btn) return;
+
+  const extra = document.getElementById(btn.dataset.target);
+  if (!extra) return;
+
+  const isOpen = !extra.hasAttribute("hidden");
+  if (isOpen) {
+    extra.setAttribute("hidden", "");
+    btn.setAttribute("aria-expanded", "false");
+    const count = extra.querySelectorAll("li").length;
+    btn.textContent = `더보기 (${count}개)`;
+  } else {
+    extra.removeAttribute("hidden");
+    btn.setAttribute("aria-expanded", "true");
+    btn.textContent = "접기";
+  }
+});
+</script>
