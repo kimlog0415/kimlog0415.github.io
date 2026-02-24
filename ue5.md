@@ -10,21 +10,9 @@ permalink: /ue5/
 | where_exp: "p", "p.project"  
 | sort: "date" | reverse %}
   
-{% assign projects = posts  
-| map: "project"  
-| compact  
-| uniq  
-| sort %}
-  
 {% for post in posts %}  
   
-### {{ proj }}  
-  
-{% assign group = posts | where: "project", proj %}  
-  
-{% for post in group %}  
 - {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
-{% endfor %}  
   
 {% endfor %}
 
