@@ -66,3 +66,22 @@ projectName: Number Run BluePrint
 	2.  Index: 각 숫자 번호, Item: CountRank를 갖는 ArrRanks를 생성하는 반복문을 구성. 
 
 
+---
+
+{% assign current_project = page.project | default: post.project %}  
+  
+{% assign related = site.devlog  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project == current_project"  
+| sort: "date"  
+%}  
+  
+{% if related.size > 1 %}  
+## Related Post
+  
+{% for item in related %}  
+{% unless item.url == page.url %}  
+- {{ item.date | date: "%Y-%m-%d" }} · [{{ item.title }}]({{ item.url | relative_url }})  
+{% endunless %}  
+{% endfor %}  
+{% endif %}

@@ -10,17 +10,20 @@ project: rhythm-game-firework
 projectName: 리듬게임, 불꽃놀이 그리고 야경
 ---
 ## 요약
+
 - UE5로 리듬게임 + 불꽃놀이 + 야경 씬을 통합한 개인 프로젝트.
 - 105시간 동안 BP, UI, DataTable, Niagara, Sequencer 등 UE 기능 대부분을 실전 사용.
 - 리듬 판정 → 불꽃 패턴 → 야경 연출까지 하나의 시스템으로 연결.
 
 ---
 ## 제작 동기
+
 - 10월에 추석 연휴가 길어서 UE5가 게임 엔진이니까 진짜로 게임을 만들어볼까 하는 생각이 들었음.
 - 어떤걸 할까 고민하다가 리듬게임과 불꽃놀이를 섞어볼까 생각함.
 
 ---
 ## 목표 설정
+
 - 작업기간: 2025.10.04.~2025.11.12.(105h)
 - 하고자 한 것:
 	- 리듬 판정(Perfect / Great / Good / Miss) 구현
@@ -29,6 +32,7 @@ projectName: 리듬게임, 불꽃놀이 그리고 야경
 
 ---
 ## 주요 작업
+
 - 시스템 구성
 	- 게임 시스템
 		- BluePrint
@@ -101,6 +105,7 @@ projectName: 리듬게임, 불꽃놀이 그리고 야경
 
 ---
 ## 이번 프로젝트에서 처음 해본 것
+
 - Blueprint Function Library  
 - Render Target  
 - Blueprint Structure  
@@ -118,3 +123,29 @@ projectName: 리듬게임, 불꽃놀이 그리고 야경
 - UI 애니메이션의 효과
 - BP 간 통신 구조 설계
 - NiagaraSystem의 파라미터 설계
+
+---
+
+## 결과
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rDfp-p8g3R0?si=lm_uAUz9l6pW6Q41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+{% assign current_project = page.project | default: post.project %}  
+  
+{% assign related = site.devlog  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project == current_project"  
+| sort: "date"  
+%}  
+  
+{% if related.size > 1 %}  
+## Related Post
+  
+{% for item in related %}  
+{% unless item.url == page.url %}  
+- {{ item.date | date: "%Y-%m-%d" }} · [{{ item.title }}]({{ item.url | relative_url }})  
+{% endunless %}  
+{% endfor %}  
+{% endif %}

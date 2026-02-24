@@ -14,7 +14,9 @@ projectName: 로그스톤 은행
 - UE5 룩데브 실습: 은행 파사드 1면을 낮 → 해질녘(비) → 비 오는 밤으로 전환.
 - 자작 에셋 + Fab(Megascans) 재질·데칼, 나이아가라 비, 젖음 머티리얼, 시퀀서/오디오 싱크.
 - 1분 내외 영상, MRQ 렌더.
+
 ---
+
 ## 제작 동기
 
 - 가상공간 공모전 수상작을 보고, 일상적인 거리 씬을 스스로 조립·룩개발해보는 개인 프로젝트로 착수.
@@ -26,12 +28,16 @@ projectName: 로그스톤 은행
     - 필요한 에셋 자체 제작
     - Fab/Marketplace에서 머티리얼·데칼 보충 적용
     - 시간·날씨 전환(Sequencer) 구현
+
 ---
+
 ## 작업 개요
 
 - 기간: 2025.09.20 ~ 2025.09.30 (총 33h)
 - 툴체인: AutoCAD(정면 도면) / Blender(에셋 모델링) / UE5(모델링툴·머티리얼·라이팅·Sequencer·Niagara·MRQ) / Vegas Pro(편집) / Logic Pro(오디오)
+
 ---
+
 ## 주요 작업
 
 ### 범위·레퍼런스
@@ -91,14 +97,44 @@ projectName: 로그스톤 은행
 ### 출력
 
 - Movie Render Queue로 MOV 렌더.
+
 ---
+
 ## 해결한 이슈
 
 - 스케일로 머티리얼 늘어짐 → UV 재투영으로 해결.
 - 텍스처 스케일 불일치 → Material Instance Tiling 표준화.
 - 밤 벽 젖음 하이라이트 부족 → 헤드라이트 스윕 라이트 추가하여 구현.
+
 ---
+
 ## 배운 점
 
 - Blender 첫 사용이었지만, CAD→모델링→UE 파이프라인이 손에 익음.
 - Niagara + 머티리얼 파라미터로 비/젖음 상태를 단계적으로 연출하는 방법 체득.
+
+---
+
+## 결과
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5iGeL8S5PHo?si=s5q5_pFgvoeySY2G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+{% assign current_project = page.project | default: post.project %}  
+  
+{% assign related = site.devlog  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project == current_project"  
+| sort: "date"  
+%}  
+  
+{% if related.size > 1 %}  
+## Related Post
+  
+{% for item in related %}  
+{% unless item.url == page.url %}  
+- {{ item.date | date: "%Y-%m-%d" }} · [{{ item.title }}]({{ item.url | relative_url }})  
+{% endunless %}  
+{% endfor %}  
+{% endif %}

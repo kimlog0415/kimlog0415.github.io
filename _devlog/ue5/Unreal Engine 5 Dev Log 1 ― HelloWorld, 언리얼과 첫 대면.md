@@ -72,3 +72,29 @@ After effect나 Cubase 등에서도 사용하는 방식과 유사했다.
 
 
 ![](https://scrap.kakaocdn.net/dn/b414aT/dJMb9kl7Rrn/b8kmgkIXn0A7j9LJFctjR1/img.jpg?width=480&height=360&face=0_0_480_360,https://scrap.kakaocdn.net/dn/Atg40/dJMb9b3M7oM/cGD1bVJnBVK9lFfqZdnA80/img.jpg?width=480&height=360&face=0_0_480_360,https://scrap.kakaocdn.net/dn/cEHdcB/dJMb9bvXkYc/2NuYYMhkxmrdysPyZfAaQ0/img.jpg?width=480&height=360&face=0_0_480_360)
+
+---
+
+## 결과
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DV_3clCPYXw?si=BIFMVie6KfIbcBZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+{% assign current_project = page.project | default: post.project %}  
+  
+{% assign related = site.devlog  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project == current_project"  
+| sort: "date"  
+%}  
+  
+{% if related.size > 1 %}  
+## Related Post
+  
+{% for item in related %}  
+{% unless item.url == page.url %}  
+- {{ item.date | date: "%Y-%m-%d" }} · [{{ item.title }}]({{ item.url | relative_url }})  
+{% endunless %}  
+{% endfor %}  
+{% endif %}

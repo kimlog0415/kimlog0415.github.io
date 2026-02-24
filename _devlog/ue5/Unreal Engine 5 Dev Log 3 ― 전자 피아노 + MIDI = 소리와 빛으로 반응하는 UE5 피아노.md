@@ -320,10 +320,28 @@ NoteOff되면 짧은 타이머
 
 아직 투박하지만, 건반을 누를 때마다 건반이 빛나고 소리도 같이 재생된다.
 
-  
+---
 
-  
+## 결과
 
-  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z8psLvewAE8?si=8vF1D2IrjpEf9y95" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[https://youtu.be/Z8psLvewAE8](https://youtu.be/Z8psLvewAE8)
+---
+
+{% assign current_project = page.project | default: post.project %}  
+  
+{% assign related = site.devlog  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project == current_project"  
+| sort: "date"  
+%}  
+  
+{% if related.size > 1 %}  
+## Related Post
+  
+{% for item in related %}  
+{% unless item.url == page.url %}  
+- {{ item.date | date: "%Y-%m-%d" }} · [{{ item.title }}]({{ item.url | relative_url }})  
+{% endunless %}  
+{% endfor %}  
+{% endif %}

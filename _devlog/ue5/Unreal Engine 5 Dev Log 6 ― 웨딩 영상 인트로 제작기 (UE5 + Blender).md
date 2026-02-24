@@ -15,11 +15,13 @@ projectName: 웨딩 영상 인트로
 - UE5에서 카드 36장 배치 + 사진/영상 미디어 적용
 - 카메라 무빙 + 조명 + MRQ 렌더
 - 최종 결과: 총 40초 인트로 완성
+
 ---
 ## 제작 동기
 
 - 남편이 편집 중인 동생 결혼 인터뷰 영상에 들어갈 인트로 제작. 
 - 처음엔 단순히 10초 정도 분량을 맡았다가, 길이가 짧다고 느껴 40초로 늘었고 결국 인트로를 담당하게 됨.
+
 ---
 ## 목표 설정
 
@@ -30,6 +32,7 @@ projectName: 웨딩 영상 인트로
 	- 단순 2D 합성이 아닌, 3D 씬으로 연출하기
 	- SNS 피드를 참고한 카드 프레임 안에서 사진/영상 표현
 	- (계획) 나이아가라 반짝이 → 실제 본편에서 가려져 제외
+
 ---
 ## 주요 작업
 #### Blender
@@ -75,6 +78,7 @@ projectName: 웨딩 영상 인트로
     - 최종: MOV(Apple ProRes)로 출력하여 문제 해결
 - 나이아가라
     - 반짝이 효과는 본편 인터뷰 영상과 겹칠 예정이라 적용하지 않음
+
 ---
 ## 배운점
 
@@ -82,3 +86,29 @@ projectName: 웨딩 영상 인트로
 - 액터 그룹핑(컴포넌트 병합)은 단순 폴더링이 아니라 동작까지 공유된다 → 용도 구분 필요
 - 블렌더에서 불필요하게 만든 부분(예: 카드 홈 파기, 프로필까지 모델링)은 UE에서 Plane으로 대체 가능하다
 - 반사판 최고다 풍선이 훨씬 예뻐졌다
+
+---
+
+## 결과
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/spik3FuBHJ8?si=YOtDM5QaEM6V_bKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+{% assign current_project = page.project | default: post.project %}  
+  
+{% assign related = site.devlog  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project == current_project"  
+| sort: "date"  
+%}  
+  
+{% if related.size > 1 %}  
+## Related Post
+  
+{% for item in related %}  
+{% unless item.url == page.url %}  
+- {{ item.date | date: "%Y-%m-%d" }} · [{{ item.title }}]({{ item.url | relative_url }})  
+{% endunless %}  
+{% endfor %}  
+{% endif %}

@@ -92,3 +92,29 @@ projectName: 시네마틱(Portal Exit)
 
 26초 영상이지만, "나도 언리얼로 이렇게 연출할 수 있다"는 걸 직접 경험한 게 가장 큰 수확이었다.  
 멀미와 아쉬움은 남았지만, 만족감이 더 크다.
+
+---
+
+## 결과
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8hCDR3biZro?si=8knC3ylk4OmEhabx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+{% assign current_project = page.project | default: post.project %}  
+  
+{% assign related = site.devlog  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project == current_project"  
+| sort: "date"  
+%}  
+  
+{% if related.size > 1 %}  
+## Related Post
+  
+{% for item in related %}  
+{% unless item.url == page.url %}  
+- {{ item.date | date: "%Y-%m-%d" }} · [{{ item.title }}]({{ item.url | relative_url }})  
+{% endunless %}  
+{% endfor %}  
+{% endif %}

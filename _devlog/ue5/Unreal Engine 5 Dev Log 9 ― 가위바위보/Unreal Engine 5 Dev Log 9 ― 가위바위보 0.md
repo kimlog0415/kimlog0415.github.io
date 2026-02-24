@@ -52,15 +52,24 @@ projectName: Rock Paper Scissors
 2. 버튼 클릭, 판정 로직, 점수 계산, 애니메이션 연출이 하나의 게임 루프로 동작한다.
 3. 실제 플레이 화면은 아래 영상으로 확인할 수 있다.
 
-![](https://scrap.kakaocdn.net/dn/byqyA0/dJMb9eTK5mB/KfrCnPQj4IWCRdJdPHaMT1/img.jpg?width=1280&height=720&face=0_0_1280_720,https://scrap.kakaocdn.net/dn/cNWZGO/dJMb9b3NwBc/yKkwDiHY7e83wd9HJBfUd0/img.jpg?width=1280&height=720&face=0_0_1280_720,https://scrap.kakaocdn.net/dn/bky1sH/dJMb9b3NwBb/A0BMUIKqBOJmONPSp07OS1/img.jpg?width=1280&height=720&face=0_0_1280_720)
-
-  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mGDfCV_GyjQ?si=CIQUl-SKM-y_7UlJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
-## Dev Log
-
-1. [Unreal Engine 5 Dev Log 9 ― 가위바위보 1](https://kimlog1203.tistory.com/23)
-2. [Unreal Engine 5 Dev Log 9 ― 가위바위보 2](https://kimlog1203.tistory.com/24)
-3. [Unreal Engine 5 Dev Log 9 ― 가위바위보 3](https://kimlog1203.tistory.com/25)
-4. [Unreal Engine 5 Dev Log 9 ― 가위바위보 4](https://kimlog1203.tistory.com/26)
+{% assign current_project = page.project | default: post.project %}  
+  
+{% assign related = site.devlog  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project == current_project"  
+| sort: "date"  
+%}  
+  
+{% if related.size > 1 %}  
+## Related Post
+  
+{% for item in related %}  
+{% unless item.url == page.url %}  
+- {{ item.date | date: "%Y-%m-%d" }} · [{{ item.title }}]({{ item.url | relative_url }})  
+{% endunless %}  
+{% endfor %}  
+{% endif %}

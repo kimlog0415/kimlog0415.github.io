@@ -91,3 +91,29 @@ projectName: 우리 동네 만들기
 5. 에디터 내 조작과 화면 이동에 익숙해졌다.
 6. VectorParameter와 ScalarParameter 활용법에 익숙해졌다.
 7. 메모리 관리와 맵 재활용 방법을 학습할 필요성을 느꼈다.
+
+---
+
+## 결과
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/40FEFY3NUw4?si=n6CyWSZGwfmgeuwy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+{% assign current_project = page.project | default: post.project %}  
+  
+{% assign related = site.devlog  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project == current_project"  
+| sort: "date"  
+%}  
+  
+{% if related.size > 1 %}  
+## Related Post
+  
+{% for item in related %}  
+{% unless item.url == page.url %}  
+- {{ item.date | date: "%Y-%m-%d" }} · [{{ item.title }}]({{ item.url | relative_url }})  
+{% endunless %}  
+{% endfor %}  
+{% endif %}
