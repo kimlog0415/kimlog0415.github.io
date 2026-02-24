@@ -92,9 +92,3 @@ projectName: 시네마틱(Portal Exit)
 
 26초 영상이지만, "나도 언리얼로 이렇게 연출할 수 있다"는 걸 직접 경험한 게 가장 큰 수확이었다.  
 멀미와 아쉬움은 남았지만, 만족감이 더 크다.
-
-  
-
-  
-
-![](https://scrap.kakaocdn.net/dn/bs9xGL/dJMb8SXsQsL/FkB3K1sVilMBGtxXBn64Kk/img.jpg?width=1280&height=720&face=0_0_1280_720,https://scrap.kakaocdn.net/dn/kWkjU/dJMb8RjWW8e/T8EZOuPaKUMJvggpJCA5I0/img.jpg?width=1280&height=720&face=0_0_1280_720,https://scrap.kakaocdn.net/dn/bWH3HE/dJMb8ZvwqZc/sKuJyaF1V8skCOXKKfkWTK/img.jpg?width=1280&height=720&face=0_0_1280_720)
