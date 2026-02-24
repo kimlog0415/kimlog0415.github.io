@@ -17,7 +17,7 @@ permalink: /ue5/
   
 {% for proj in projects %}  
   
-### {{ proj }}  
+### {{ proj.projectName }}  
   
 {% assign group = posts | where: "project", proj %}  
   

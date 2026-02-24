@@ -6,12 +6,12 @@ categories:
   - devlog
   - ue5
 project: number-run
+projectName: Number Run BluePrint
 ---
 ## 오늘의 목표
 
-1. Number Run 프로젝트 초기 세팅
-2. 숫자 Actor 및 기본 UI 화면 구성
-3. 게임 시작 시 Sequence → Run 흐름 테스트
+1. 숫자 Actor 및 기본 UI 화면 구성
+2. 게임 시작 시 Sequence → Run 흐름 테스트
 
 ---
 ## 오늘 한 일

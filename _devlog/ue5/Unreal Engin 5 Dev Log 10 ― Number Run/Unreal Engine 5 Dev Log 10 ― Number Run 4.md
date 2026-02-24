@@ -6,11 +6,12 @@ categories:
   - devlog
   - ue5
 project: number-run
+projectName: Number Run BluePrint
 ---
 ## 오늘 한 일
 
 1. WBP_Result, WBP_RankingRow, BP_RankingItem
-    1. 표처럼 순위, 숫자, 소요시간 표시하기
+    1. ListView를 이용해 순위, 숫자, 소요시간 표시하기
     2. Duration은 소수점 아래 3자리까지 표기되도록 수정
     3. Duration<0인 경우(=도착하지 못한 경우) FAIL이 표기되도록 설정
 2. BP_Crowd, 기타 꾸미기

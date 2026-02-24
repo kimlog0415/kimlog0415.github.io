@@ -6,6 +6,7 @@ categories:
   - devlog
   - ue5
 project: number-run
+projectName: Number Run BluePrint
 ---
 ## 오늘 한 일
 

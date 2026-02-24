@@ -6,6 +6,8 @@ categories:
   - devlog
   - ue5
   - summary
+project: wedding-intro
+projectName: 웨딩 영상 인트로
 ---
 ## 요약
 

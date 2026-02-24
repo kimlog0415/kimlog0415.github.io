@@ -6,6 +6,7 @@ categories:
   - ue5
   - summary
 project: number-run
+projectName: Number Run BluePrint
 ---
 ## 요약
 
@@ -39,16 +40,16 @@ project: number-run
 3. UMG 구성
     1. WBP_Title ☑️
     2. WBP_SelectNumber ☑️
-    3. WBP_HUD 🔄️
-    4. WBP_Result⏳
-4. Sequence 구성⏳
-5. SFX / BGM⏳
+    3. WBP_HUD ☑️
+    4. WBP_Result ☑️
+4. Sequence 구성 ☑️
+5. SFX / BGM ☑️
 
 ---
 
 ## 결과
 
-1. 현재 기본 레이스 구조와 숫자 선택 로직 구현 완료, UI 및 카메라 연동 작업 진행 중
+1. 
 
 
 ---

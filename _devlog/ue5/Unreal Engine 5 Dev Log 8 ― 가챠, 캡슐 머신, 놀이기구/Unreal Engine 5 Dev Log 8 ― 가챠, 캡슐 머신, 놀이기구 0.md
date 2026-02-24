@@ -6,6 +6,7 @@ categories:
   - summary
   - ue5
 project: gacha-machine
+projectName: Gacha Machine
 ---
 ## 요약
 

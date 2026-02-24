@@ -6,6 +6,8 @@ categories:
   - devlog
   - ue5
   - summary
+project: logstone-bank
+projectName: 로그스톤 은행
 ---
 ## 요약
 
