@@ -57,7 +57,7 @@ projectName: Number Run BluePrint
 
 ---
 
-# Dev Log
+## Dev Log
 
 {% assign posts = site.devlog  
 | where_exp: "p", "p.categories contains 'ue5'"  
