@@ -8,7 +8,7 @@ collections:
     output: true
     permalink: /devlog/:path/
 header_pages:
-  - devlog.md
+  - devlog.html
   - ue5.md
   - tools.md
   - about.md
