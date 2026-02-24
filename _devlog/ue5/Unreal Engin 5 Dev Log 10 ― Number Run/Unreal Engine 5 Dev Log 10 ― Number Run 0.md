@@ -61,7 +61,7 @@ projectName: Number Run BluePrint
 
 {% assign posts = site.devlog  
 | where_exp: "p", "p.categories contains 'ue5'"  
-| where_exp: "p", "p.project"  
+| where_exp: "p", "p.project contains {{ post.project }}"  
 | sort: "date" | reverse %}
   
 {% assign projects = posts  
