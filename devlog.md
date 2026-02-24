@@ -8,7 +8,7 @@ cats(raw)= {{ p.categories }} / cats(join)= {{ p.categories | join: '|' }}
 
 ## Today I Learn
 {% assign posts = site.devlog  
-| where_exp: "p", "p.categories contains 'devlog'"  
+| where_exp: "p", "p.categories contains 'devlog' and p.project"
 | sort: "date"  
 | reverse %}  
   
