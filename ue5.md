@@ -6,6 +6,7 @@ permalink: /ue5/
 ## Projects
 {% assign posts = site.devlog  
 | where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.categories contains 'summary'"  
 | where_exp: "p", "p.project"  
 | sort: "date" | reverse %}
   
