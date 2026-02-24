@@ -7,13 +7,18 @@ permalink: /devlog/
 cats(raw)= {{ p.categories }} / cats(join)= {{ p.categories | join: '|' }}
 
 ## Today I Learn
-{% assign ue5_devlog = site.devlog  
+{% assign posts = site.devlog  
 | where_exp: "p", "p.categories contains 'devlog'"  
-| where_exp: "p", "p.project contains 'today-i-learn'"  
-| sort: "date" | reverse %}
-
-{% for post in posts %}  
+| sort: "date"  
+| reverse %}  
+  
+{% assign groups = posts | group_by: "project" %}  
+  
+{% for g in groups %}  
+### {{ g.projectName | default: "No Project" }}  
+{% for post in g.items %}  
 - {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
+{% endfor %}  
 {% endfor %}
 
 ## Dev Log ― Unreal Engine 5  
