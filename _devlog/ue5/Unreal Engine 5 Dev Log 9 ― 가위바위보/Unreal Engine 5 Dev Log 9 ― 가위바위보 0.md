@@ -3,7 +3,6 @@ layout: post
 title: Unreal Engine 5 Dev Log 9 ― 가위바위보
 date: 2026-01-24
 categories:
-  - devlog
   - ue5
   - summary
 project: rock-paper-scissors
