@@ -3,20 +3,10 @@ layout: page
 title: Dev Log
 permalink: /devlog/
 ---
-{% assign p = site.devlog[0] %}
-cats(raw)= {{ p.categories }} / cats(join)= {{ p.categories | join: '|' }}
-
-
-
 {% assign base = site.devlog  
 | where_exp: "p", "p.categories contains 'devlog'"  
 | sort: "date"  
 | reverse %}  
-  
-{%- comment -%}  
-other_includes = (ue5/tools/...) 섹션들의 include 값을 전부 모은 리스트  
-→ devlog-only = devlog이면서 other_includes 중 어떤 것도 포함하지 않는 글  
-{%- endcomment -%}  
   
 {% capture inc_csv %}  
 {% for sec in site.data.sections %}  
@@ -26,7 +16,6 @@ other_includes = (ue5/tools/...) 섹션들의 include 값을 전부 모은 리�
 {% endcapture %}  
 {% assign other_includes = inc_csv | strip | split: "," | uniq %}  
   
-{%- comment -%} 1) ue5/tools/... 섹션 렌더 {%- endcomment -%}  
 {% for sec in site.data.sections %}  
 {% assign sec_key = sec[0] %}  
 {% assign sec_data = sec[1] %}  
@@ -78,15 +67,22 @@ other_includes = (ue5/tools/...) 섹션들의 include 값을 전부 모은 리�
 ---  
   
 {% endfor %}  
-  
-{%- comment -%} 2) devlog-only 섹션(자동) {%- endcomment -%}  
-  
-{% assign devlog_only = base %}  
-{% for inc in other_includes %}  
-{% if inc != "" %}  
-{% assign devlog_only = devlog_only | where_exp: "p", "p.categories contains inc == false" %}  
-{% endif %}  
-{% endfor %}  
+    
+{% assign devlog_only = "" | split: "" %}
+
+{% for post in base %}
+  {% assign is_other = false %}
+
+  {% for inc in other_includes %}
+    {% if inc != "" and post.categories contains inc %}
+      {% assign is_other = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% unless is_other %}
+    {% assign devlog_only = devlog_only | push: post %}
+  {% endunless %}
+{% endfor %}
   
 ### Dev Log ― DevLog  
   
