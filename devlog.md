@@ -15,7 +15,7 @@ cats(raw)= {{ p.categories }} / cats(join)= {{ p.categories | join: '|' }}
 {% assign groups = posts | group_by: "project" %}  
   
 {% for g in groups %}  
-### {{ g.projectName | default: "No Project" }}  
+### {{ g.Name | default: "No Project" }}  
 {% for post in g.items %}  
 - {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
 {% endfor %}  
