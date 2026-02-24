@@ -14,11 +14,14 @@ cats(raw)= {{ p.categories }} / cats(join)= {{ p.categories | join: '|' }}
   
 {% assign groups = posts | group_by: "project" %}  
   
-{% for g in groups %}  
-### {{ g.Name | default: "No Project" }}  
-{% for post in g.items %}  
-- {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
+{% for group in groups %}  
+### {{ group.name }}  
+  
+{% for post in group.items %}  
+- {{ post.date | date: "%Y-%m-%d" }} ·  
+[{{ post.title }}]({{ post.url | relative_url }})  
 {% endfor %}  
+  
 {% endfor %}
 
 ## Dev Log ― Unreal Engine 5  
