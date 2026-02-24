@@ -10,7 +10,7 @@ permalink: /ue5/
 | sort: "date" | reverse %}
   
 {% assign projects = posts  
-| map: "projectName"  
+| map: "project"  
 | compact  
 | uniq  
 | sort %}
