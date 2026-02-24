@@ -3,8 +3,8 @@ layout: page
 title: Dev Log
 permalink: /devlog/
 ---
-site.devlog size = {{ site.devlog | size }}
-첫 글 categories = {{ site.devlog[0].categories }}
+{% assign p = site.devlog[0] %}
+cats(raw)= {{ p.categories }} / cats(join)= {{ p.categories | join: '|' }}
 
 ## Today I Learn
 {% assign ue5_devlog = site.devlog  
