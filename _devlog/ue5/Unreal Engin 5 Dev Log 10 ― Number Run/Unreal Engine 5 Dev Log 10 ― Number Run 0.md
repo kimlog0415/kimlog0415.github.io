@@ -57,14 +57,16 @@ projectName: Number Run BluePrint
 
 ---
 
-## Dev Log
-
-{% assign posts = site.devlog  
+{% assign current_project = page.project | default: post.project %}  
+  
+{% assign related = site.devlog  
 | where_exp: "p", "p.categories contains 'ue5'"  
-| where_exp: "p", "p.project == current_project=="  
-| sort: "date" %}
+| where_exp: "p", "p.project == current_project"  
+| sort: "date"  
+%}  
   
 {% if related.size > 1 %}  
+### Related Post
   
 {% for item in related %}  
 {% unless item.url == page.url %}  
