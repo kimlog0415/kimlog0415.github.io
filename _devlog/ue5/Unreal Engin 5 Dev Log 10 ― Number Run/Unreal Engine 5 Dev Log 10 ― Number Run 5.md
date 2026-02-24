@@ -16,7 +16,7 @@ projectName: Number Run BluePrint
 2. 게임 시작 직전에는 Select Num == 1st Index로 설정하여 현재 1등에 유저가 선택한 번호가 기본으로 뜨도록 설정
 3. BFL(Blueprint Function Library)
 	1. 매번 ArrRanks를 가져다가 Find해서 ST_Numbers의 Index를 얻어내는 방식이 번거로워서 공통으로 사용 가능한 함수 생성. Rank 또는 Item을 넣으면 필요한 Index를 Return
-![[Pasted image 20260224231613.png]]
+![[스크린샷 2026-02-24 225044.png]]
 4. 영상 업로드
 ---
 
