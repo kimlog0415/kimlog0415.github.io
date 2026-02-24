@@ -51,7 +51,7 @@ projectName: Number Run BluePrint
 
 ## 결과
 
-![](https://scrap.kakaocdn.net/dn/rtzMN/dJMb9gxipoz/PPfVOL60dy4UCYqgbKfS1K/img.jpg?width=1280&height=720&face=0_0_1280_720,https://scrap.kakaocdn.net/dn/qcYbk/dJMb9gxipoA/Vy1wM2TNAeDVSQqdzfXRq0/img.jpg?width=1280&height=720&face=0_0_1280_720,https://scrap.kakaocdn.net/dn/cbAOUK/dJMb9jOjZly/9r7xOfNYWIKumaFhKKfF51/img.jpg?width=1280&height=720&face=0_0_1280_720)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a-SI0Rz9B8w?si=n2kqBSm9xIjeUi3j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
   
 
@@ -66,7 +66,7 @@ projectName: Number Run BluePrint
 %}  
   
 {% if related.size > 1 %}  
-### Related Post
+## Related Post
   
 {% for item in related %}  
 {% unless item.url == page.url %}  
