@@ -61,21 +61,14 @@ projectName: Number Run BluePrint
 
 {% assign posts = site.devlog  
 | where_exp: "p", "p.categories contains 'ue5'"  
-| where_exp: "p", "p.project contains {{ post.project }}"  
+| where_exp: "p", "p.project == current_project=="  
 | sort: "date" %}
   
-{% assign projects = posts  
-| map: "project"  
-| compact  
-| uniq  
-| sort %}
+{% if related.size > 1 %}  
   
-{% for proj in projects %}  
-  
-{% assign group = posts | where: "project", proj %}  
-  
-{% for post in group %}  
-- {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
+{% for item in related %}  
+{% unless item.url == page.url %}  
+- {{ item.date | date: "%Y-%m-%d" }} · [{{ item.title }}]({{ item.url | relative_url }})  
+{% endunless %}  
 {% endfor %}  
-  
-{% endfor %}
+{% endif %}
