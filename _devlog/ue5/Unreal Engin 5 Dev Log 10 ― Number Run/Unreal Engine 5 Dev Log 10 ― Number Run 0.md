@@ -8,7 +8,7 @@ categories:
 project: number-run
 projectName: Number Run BluePrint
 ---
-# 요약
+## 요약
 
 - 숫자 선택 기반 미니 레이스 게임(Number Run) 제작
 - Player 선택값을 기준으로 Actor와 Camera를 동기화하는 구조 구현
@@ -17,14 +17,14 @@ projectName: Number Run BluePrint
 
 ---
 
-# 제작 동기
+## 제작 동기
 
 - Blueprint와 UMG, Camera 제어를 함께 사용하는 간단한 미니게임 구조를 연습하기 위해 제작
 - Player 선택 → 게임 로직 → 결과 출력까지의 전체 흐름을 한 번에 다뤄보기 위한 과제
 
 ---
 
-# 목표 설정
+## 목표 설정
 
 - 작업 기간: 2026.02.06. ~ 2026.02.22.
 - 목표
@@ -34,7 +34,7 @@ projectName: Number Run BluePrint
 
 ---
 
-# 주요 작업
+## 주요 작업
 
 1. Object로 사용할 이미지 생성 및 필요한 파트 추출하여 Texture 확보 ☑️
 2. BP_Number 구현 ☑️
@@ -49,7 +49,7 @@ projectName: Number Run BluePrint
 
 ---
 
-# 결과
+## 결과
 
 ![](https://scrap.kakaocdn.net/dn/rtzMN/dJMb9gxipoz/PPfVOL60dy4UCYqgbKfS1K/img.jpg?width=1280&height=720&face=0_0_1280_720,https://scrap.kakaocdn.net/dn/qcYbk/dJMb9gxipoA/Vy1wM2TNAeDVSQqdzfXRq0/img.jpg?width=1280&height=720&face=0_0_1280_720,https://scrap.kakaocdn.net/dn/cbAOUK/dJMb9jOjZly/9r7xOfNYWIKumaFhKKfF51/img.jpg?width=1280&height=720&face=0_0_1280_720)
 
