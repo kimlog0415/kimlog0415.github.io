@@ -10,14 +10,14 @@ permalink: /ue5/
 | sort: "date" | reverse %}
   
 {% assign projects = posts  
-| map: "project"  
+| map: "projectName"  
 | compact  
 | uniq  
 | sort %}
   
 {% for proj in projects %}  
   
-### {{ proj.projectName }}  
+### {{ proj }}  
   
 {% assign group = posts | where: "project", proj %}  
   
