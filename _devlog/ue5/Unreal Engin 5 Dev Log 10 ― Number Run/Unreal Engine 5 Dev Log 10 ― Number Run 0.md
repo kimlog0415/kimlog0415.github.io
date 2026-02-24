@@ -8,7 +8,7 @@ categories:
 project: number-run
 projectName: Number Run BluePrint
 ---
-## 요약
+# 요약
 
 - 숫자 선택 기반 미니 레이스 게임(Number Run) 제작
 - Player 선택값을 기준으로 Actor와 Camera를 동기화하는 구조 구현
@@ -17,43 +17,65 @@ projectName: Number Run BluePrint
 
 ---
 
-## 제작 동기
+# 제작 동기
+
 - Blueprint와 UMG, Camera 제어를 함께 사용하는 간단한 미니게임 구조를 연습하기 위해 제작
 - Player 선택 → 게임 로직 → 결과 출력까지의 전체 흐름을 한 번에 다뤄보기 위한 과제
 
 ---
 
-## 목표 설정
+# 목표 설정
 
-- 작업 기간: 2026.02.06. ~ 현재
+- 작업 기간: 2026.02.06. ~ 2026.02.22.
 - 목표
-	- Player가 숫자를 선택하면 해당 번호의 Actor가 랜덤 속도로 레이스 진행
-	- 선택된 Actor를 추적하는 Follow Camera 구현
-	- 레이스 종료 후 결과 UI 출력
+    - Player가 숫자를 선택하면 해당 번호의 Actor가 랜덤 속도로 레이스 진행
+    - 선택된 Actor를 추적하는 Follow Camera 구현
+    - 레이스 종료 후 결과 UI 출력
 
 ---
 
-## 주요 작업
+# 주요 작업
 
 1. Object로 사용할 이미지 생성 및 필요한 파트 추출하여 Texture 확보 ☑️
-2. BP_Number 구현 ☑️
+2. BP_Number 구현 ☑️
 3. UMG 구성
-    1. WBP_Title ☑️
-    2. WBP_SelectNumber ☑️
+    1. WBP_Title ☑️
+    2. WBP_SelectNumber ☑️
     3. WBP_HUD ☑️
-    4. WBP_Result ☑️
+    4. WBP_Award ☑️
+    5. WBP_Result ☑️
 4. Sequence 구성 ☑️
 5. SFX / BGM ☑️
 
 ---
 
-## 결과
+# 결과
 
-1. 
+![](https://scrap.kakaocdn.net/dn/rtzMN/dJMb9gxipoz/PPfVOL60dy4UCYqgbKfS1K/img.jpg?width=1280&height=720&face=0_0_1280_720,https://scrap.kakaocdn.net/dn/qcYbk/dJMb9gxipoA/Vy1wM2TNAeDVSQqdzfXRq0/img.jpg?width=1280&height=720&face=0_0_1280_720,https://scrap.kakaocdn.net/dn/cbAOUK/dJMb9jOjZly/9r7xOfNYWIKumaFhKKfF51/img.jpg?width=1280&height=720&face=0_0_1280_720)
 
+  
 
 ---
 
-## Dev Log
+# Dev Log
 
-1.
+{% assign posts = site.devlog  
+| where_exp: "p", "p.categories contains 'ue5'"  
+| where_exp: "p", "p.project"  
+| sort: "date" | reverse %}
+  
+{% assign projects = posts  
+| map: "project"  
+| compact  
+| uniq  
+| sort %}
+  
+{% for proj in projects %}  
+  
+{% assign group = posts | where: "project", proj %}  
+  
+{% for post in group %}  
+- {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
+{% endfor %}  
+  
+{% endfor %}
