@@ -6,7 +6,8 @@ categories:
   - devlog
   - ue5
 project: gacha-machine
-projectName: Gacha Machine
+project_name: Gacha Machine
+video_id:
 ---
 ## 오늘 한 일
 

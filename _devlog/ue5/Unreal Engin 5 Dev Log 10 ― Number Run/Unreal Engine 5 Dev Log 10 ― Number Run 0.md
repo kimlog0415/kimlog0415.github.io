@@ -6,7 +6,8 @@ categories:
   - ue5
   - summary
 project: number-run
-projectName: Number Run BluePrint
+project_name: Number Run BluePrint
+video_id:
 ---
 ## 요약
 

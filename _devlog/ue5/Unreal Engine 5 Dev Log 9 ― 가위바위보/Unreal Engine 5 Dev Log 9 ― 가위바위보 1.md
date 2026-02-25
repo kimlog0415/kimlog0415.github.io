@@ -6,7 +6,8 @@ categories:
   - devlog
   - ue5
 project: rock-paper-scissors
-projectName: Rock Paper Scissors
+project_name: Rock Paper Scissors
+video_id:
 ---
 ## 오늘 한 일
 

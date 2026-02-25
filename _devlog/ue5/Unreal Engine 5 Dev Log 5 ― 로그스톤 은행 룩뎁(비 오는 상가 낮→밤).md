@@ -7,7 +7,8 @@ categories:
   - ue5
   - summary
 project: logstone-bank
-projectName: 로그스톤 은행
+project_name: 로그스톤 은행
+video_id:
 ---
 ## 요약
 

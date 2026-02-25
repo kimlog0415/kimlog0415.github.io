@@ -7,7 +7,8 @@ categories:
   - ue5
   - summary
 project: cinematic-portal-exit
-projectName: 시네마틱(Portal Exit)
+project_name: 시네마틱(Portal Exit)
+video_id:
 ---
 ![](https://blog.kakaocdn.net/dna/btyLwe/dJMcaiWrN28/AAAAAAAAAAAAAAAAAAAAADFZKT6OmBGU4-RflvRbHa1Wmms-cHIxFCJWH3vOZ-w5/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=uLV0ErYiioGs%2B9L%2B34iXzY4NNVg%3D)
 

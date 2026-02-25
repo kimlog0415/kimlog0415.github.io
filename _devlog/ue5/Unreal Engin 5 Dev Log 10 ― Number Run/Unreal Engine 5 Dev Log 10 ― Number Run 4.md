@@ -6,7 +6,8 @@ categories:
   - devlog
   - ue5
 project: number-run
-projectName: Number Run BluePrint
+project_name: Number Run BluePrint
+video_id:
 ---
 ## 오늘 한 일
 

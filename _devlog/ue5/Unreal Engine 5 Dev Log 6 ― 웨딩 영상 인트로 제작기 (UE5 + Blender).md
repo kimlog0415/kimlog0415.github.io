@@ -7,7 +7,8 @@ categories:
   - ue5
   - summary
 project: wedding-intro
-projectName: 웨딩 영상 인트로
+project_name: 웨딩 영상 인트로
+video_id:
 ---
 ## 요약
 
