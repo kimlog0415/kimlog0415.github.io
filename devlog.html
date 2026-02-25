@@ -28,7 +28,7 @@ permalink: /devlog/
 
     {% for group in groups %}
       {% assign first = group.items | first %}
-      {% assign project_title = first.projectName | default: group.name %}
+      {% assign project_title = first.project_name | default: group.name %}
       {% assign gid = sec_key | append: "-" | append: group.name | replace: " ", "-" | downcase %}
 
       <details open class="devlog-group">
