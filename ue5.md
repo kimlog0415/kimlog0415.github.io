@@ -24,7 +24,7 @@ permalink: /ue5/
 {% for post in items %}  
 {% assign cats = post.categories | join: "," | downcase %}  
 {% if cats contains "devlog" and cats contains "ue5" %}  
-- {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
+- {{ post.date | date: "%Y-%m-%d" }} | [{{ post.title }}]({{ post.url | relative_url }})  
 {% assign count = count | plus: 1 %}  
 {% endif %}  
 {% endfor %}  
