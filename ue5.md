@@ -12,7 +12,7 @@ permalink: /ue5/
   
 {% for post in posts %}  
   
-- {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
+- {{ post.date | date: "%Y-%m-%d" }} | [{{ post.title }}]({{ post.url | relative_url }})  
   
 {% endfor %}
 
