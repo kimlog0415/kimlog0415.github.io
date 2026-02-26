@@ -7,8 +7,8 @@ categories:
   - ue5
   - summary
 project: hello-world
-video_id: Hello World
 project_name: DV_3clCPYXw
+video_id: Hello World
 ---
 ![](https://blog.kakaocdn.net/dna/xCa0e/dJMcagRUeQ4/AAAAAAAAAAAAAAAAAAAAAB5jbW_7RL4JH5wU0ft5aTphI-jj7YvOLufBxAAFb2GP/img.webp?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=PMLh1eR0b6TBuZAYJrx3x4M4I1o%3D)
 
@@ -78,7 +78,7 @@ After effect나 Cubase 등에서도 사용하는 방식과 유사했다.
 
 ## 결과
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DV_3clCPYXw?si=BIFMVie6KfIbcBZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include youtube.html id=page.video_id %}
 
 ---
 
