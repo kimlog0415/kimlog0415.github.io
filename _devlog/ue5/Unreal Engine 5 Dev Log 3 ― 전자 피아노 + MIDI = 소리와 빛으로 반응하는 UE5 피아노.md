@@ -252,11 +252,8 @@ DMI = Material Instance Dynamic. 런타임에서 파라미터가 바뀌는 인�
 		→ Return Node(FoundValue = DMI)
 	→ False? Return Node()
 
-  
 
 ---
-
-  
 
 ### Set Note Color and Emissive
 
