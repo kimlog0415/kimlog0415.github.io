@@ -8,7 +8,7 @@ categories:
   - summary
 project: wedding-intro
 project_name: 웨딩 영상 인트로
-video_id:
+video_id: spik3FuBHJ8
 ---
 ## 요약
 
