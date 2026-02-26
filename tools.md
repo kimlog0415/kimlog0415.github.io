@@ -22,7 +22,7 @@ permalink: /tools/
 {% assign group = posts | where: "project", proj %}
 
 {% for post in group %}
-- {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})
+- {{ post.date | date: "%Y-%m-%d" }} | [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
 {% endfor %}
