@@ -92,7 +92,7 @@ video_id: spik3FuBHJ8
 
 ## 결과
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/spik3FuBHJ8?si=YOtDM5QaEM6V_bKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include youtube.html id=page.video_id %}
 
 ---
 
