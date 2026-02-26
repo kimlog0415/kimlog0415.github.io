@@ -7,7 +7,7 @@ categories:
   - summary
 project: number-run
 project_name: Number Run BluePrint
-video_id:
+video_id: a-SI0Rz9B8w
 ---
 ## 요약
 
