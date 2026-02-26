@@ -118,7 +118,7 @@ video_id: 5iGeL8S5PHo
 
 ## 결과
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5iGeL8S5PHo?si=s5q5_pFgvoeySY2G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include youtube.html id=page.video_id %}
 
 ---
 
