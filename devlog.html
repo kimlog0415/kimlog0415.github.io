@@ -39,14 +39,14 @@ permalink: /devlog/
 
         <ul class="devlog-list">
           {% for post in group.items limit: 3 %}
-            <li>{{ post.date | date: "%Y-%m-%d" }} · <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+            <li>{{ post.date | date: "%Y-%m-%d" }} ｜ <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
 
         {% if group.items.size > 3 %}
           <ul class="devlog-list devlog-extra" id="extra-{{ gid }}" hidden>
             {% for post in group.items offset: 3 %}
-              <li>{{ post.date | date: "%Y-%m-%d" }} · <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+              <li>{{ post.date | date: "%Y-%m-%d" }} ｜ <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
             {% endfor %}
           </ul>
 
