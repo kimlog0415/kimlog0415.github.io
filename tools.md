@@ -22,7 +22,7 @@ permalink: /tools/
 {% assign group = posts | where: "project", proj %}
 
 {% for post in group %}
-- {{ post.date | date: "%Y-%m-%d" }} | [{{ post.title }}]({{ post.url | relative_url }})
+- {{ post.date | date: "%Y-%m-%d" }} ｜ [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
 {% endfor %}
@@ -35,7 +35,7 @@ permalink: /tools/
 {% for post in items %}  
 {% assign cats = post.categories | join: "," | downcase %}  
 {% if cats contains "devlog" and cats contains "tools" %}  
-- {{ post.date | date: "%Y-%m-%d" }} · [{{ post.title }}]({{ post.url | relative_url }})  
+- {{ post.date | date: "%Y-%m-%d" }} ｜ [{{ post.title }}]({{ post.url | relative_url }})  
 {% assign count = count | plus: 1 %}  
 {% endif %}  
 {% endfor %} 
