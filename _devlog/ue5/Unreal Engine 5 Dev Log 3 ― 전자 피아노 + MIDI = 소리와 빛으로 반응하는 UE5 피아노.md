@@ -322,7 +322,7 @@ NoteOff되면 짧은 타이머
 
 ## 결과
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z8psLvewAE8?si=8vF1D2IrjpEf9y95" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include youtube.html id=page.video_id %}
 
 ---
 
