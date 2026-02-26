@@ -52,9 +52,7 @@ video_id: a-SI0Rz9B8w
 
 ## 결과
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/a-SI0Rz9B8w?si=n2kqBSm9xIjeUi3j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-  
+{% include youtube.html id=page.video_id %}  
 
 ---
 
