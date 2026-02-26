@@ -7,7 +7,8 @@ categories:
   - ue5
   - summary
 project: rhythm-game-firework
-projectName: 리듬게임, 불꽃놀이 그리고 야경
+project_name: 리듬게임, 불꽃놀이 그리고 야경
+video_id: rDfp-p8g3R0
 ---
 ## 요약
 
