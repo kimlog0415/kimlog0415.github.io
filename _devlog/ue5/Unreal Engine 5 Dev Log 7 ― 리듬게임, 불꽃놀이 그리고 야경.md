@@ -129,7 +129,7 @@ video_id: rDfp-p8g3R0
 
 ## 결과
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rDfp-p8g3R0?si=lm_uAUz9l6pW6Q41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include youtube.html id=page.video_id %}
 
 ---
 
