@@ -39,8 +39,8 @@ permalink: /
             loading="lazy"
           />
           <div>
+			<div class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</div>
             <div style="font-weight:700;">{{ post.title }}</div>
-            <div class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</div>
           </div>
         </a>
       </li>
