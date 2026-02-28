@@ -2,9 +2,13 @@
 layout: post
 title: PDF Editor
 date: 2026-02-17
-categories: tools
+categories:
+  - tools
+  - summary
 redirecto_to: ./index.html
-project: web-tools
+project: pdf-editor
+project_name: PDF Editor
+video_id:
 ---
 <iframe  
 src="{{ './index.html' | relative_url }}"  
