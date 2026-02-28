@@ -1,3 +1,11 @@
 <title>
   {{ site.title }}{% if page.title %} ― {{ page.title }}{% enddif %}
 </title>
+<!-- favicon -->
+<link rel="icon" type="image/png" href="{{ '/assets/images/profile.png' | relative_url }}">
+
+<!-- optional: apple touch icon -->
+<link rel="apple-touch-icon" href="{{ '/assets/images/profile.png' | relative_url }}">
+
+<!-- optional: Open Graph default image -->
+<meta property="og:image" content="{{ '/assets/images/profile.png' | relative_url }}">
