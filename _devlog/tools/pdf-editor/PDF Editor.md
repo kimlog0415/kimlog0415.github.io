@@ -11,7 +11,7 @@ project_name: PDF Editor
 video_id:
 ---
 <iframe  
-src="{{ 'page.redirect_to' | relative_url }}"  
+src="{{ redirect_to | relative_url }}"  
 style="width: 100%; height: 90vh; border: 0;"  
 loading="lazy"  
 ></iframe>
