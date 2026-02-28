@@ -2,5 +2,6 @@
 layout: page
 title: About
 ---
-
-Project-based learning log.
+Contact
+📧 kimlog0415@gmail.com
+▶️ https://www.youtube.com/@kimlog1106
