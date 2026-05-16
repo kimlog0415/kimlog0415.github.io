@@ -1,95 +1,11 @@
----
-layout: home
----
-
-<h2>Dev Logs</h2>
-
-{% assign all_devlogs = site.devlog | where_exp: "p", "p.categories contains 'devlog'" | sort: "date" | reverse %}
-<ul class="post-list home-list">
-  {% for post in all_devlogs limit: 5 %}
-  <li class="home-row">
-    <span class="home-date post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-    <span class="home-sep">｜</span>
-    <a class="home-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
-{% if all_devlogs.size > 5 %}
-<a class="devlog-toggle" href="{{ '/devlog/' | relative_url }}">더보기 ▾</a>
-{% endif %}
-
-<hr />
-
-<h2>Apps</h2>
-
-<ul class="post-list home-list" id="list-apps">
-  {% assign apps = site.devlog | where_exp: "p", "p.categories contains 'summary'" | where_exp: "p", "p.app_url" | sort: "date" | reverse %} {% if apps.size == 0 %}
-  <p>No apps yet.</p>
-  {% else %} {% for post in apps %}
-  <li class="home-app{% if forloop.index > 5 %} devlog-extra-item{% endif %}"{% if forloop.index > 5 %} hidden{% endif %}>
-    <a class="home-app-link" href="{{ post.url | relative_url }}">
-      <img
-        class="home-app-thumb"
-        src="{{ '/assets/images/' | append: post.project | append: '.png' | relative_url }}"
-        alt="{{ post.project_name | default: post.title }}"
-        loading="lazy"
-      />
-      <div class="home-app-text">
-        <div class="home-date post-meta">{{ post.date | date: "%Y-%m-%d" }}</div>
-        <div class="home-title">{{ post.project_name | default: post.title }}</div>
-      </div>
-    </a>
-  </li>
-  {% endfor %} {% if apps.size > 5 %}
-  <button class="devlog-toggle" data-list="list-apps">더보기 ▾</button>
-  {% endif %} {% endif %}
-</ul>
-
-<hr />
-
-<h2>Videos</h2>
-
-<ul class="post-list home-list" id="list-videos">
-  {% assign vids = site.devlog | where_exp: "p", "p.video_id" | where_exp: "p", "p.categories contains 'summary'" | sort: "date" | reverse %} {% if vids.size == 0 %}
-  <p>No videos yet.</p>
-  {% else %} {% for post in vids %}
-  <li class="home-video{% if forloop.index > 5 %} devlog-extra-item{% endif %}"{% if forloop.index > 5 %} hidden{% endif %}>
-    <a class="home-video-link" href="{{ post.url | relative_url }}">
-      <img
-        class="home-thumb"
-        src="https://i.ytimg.com/vi/{{ post.video_id }}/hqdefault.jpg"
-        alt="YouTube thumbnail"
-        loading="lazy"
-      />
-      <div class="home-video-text">
-        <div class="home-date post-meta">
-          {{ post.date | date: "%Y-%m-%d" }}
-        </div>
-        <div class="home-title">{{ post.title }}</div>
-      </div>
-    </a>
-  </li>
-  {% endfor %} {% if vids.size > 5 %}
-  <button class="devlog-toggle" data-list="list-videos">더보기 ▾</button>
-  {% endif %} {% endif %}
-</ul>
-
-<script>
-  document.addEventListener("click", (e) => {
-    const btn = e.target.closest(".devlog-toggle");
-    if (!btn || !btn.dataset.list) return;
-    const list = document.getElementById(btn.dataset.list);
-    if (!list) return;
-    const extras = list.querySelectorAll(".devlog-extra-item");
-    const isOpen = btn.getAttribute("aria-expanded") === "true";
-    if (isOpen) {
-      extras.forEach((li) => li.setAttribute("hidden", ""));
-      btn.setAttribute("aria-expanded", "false");
-      btn.textContent = "더보기 ▾";
-    } else {
-      extras.forEach((li) => li.removeAttribute("hidden"));
-      btn.setAttribute("aria-expanded", "true");
-      btn.textContent = "접기 ▴";
-    }
-  });
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url=https://kimlog.pages.dev">
+    <link rel="canonical" href="https://kimlog.pages.dev">
+  </head>
+  <body>
+    <script>window.location.replace("https://kimlog.pages.dev")</script>
+  </body>
+</html>
